@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/lib/prisma";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { Filter, SlidersHorizontal, Search, ArrowUpDown, X } from "lucide-react";
 
-const prisma = new PrismaClient();
+
 
 export const revalidate = 0;
 

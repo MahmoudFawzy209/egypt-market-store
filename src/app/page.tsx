@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/lib/prisma";
 import { ProductCard } from "@/components/ui/ProductCard";
 import {
   Sparkles,
@@ -15,7 +15,7 @@ import {
   ChevronLeft
 } from "lucide-react";
 
-const prisma = new PrismaClient();
+
 
 export const revalidate = 0;
 

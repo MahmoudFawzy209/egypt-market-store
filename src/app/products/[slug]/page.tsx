@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/lib/prisma";
 import { ProductCard } from "@/components/ui/ProductCard";
 import ProductDetailClient from "./ProductDetailClient";
 
-const prisma = new PrismaClient();
+
 
 export const revalidate = 0;
 
